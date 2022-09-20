@@ -251,10 +251,15 @@ button {
     --margin-left2: 75px;
 }
 
+body {
+    margin: 0%;
+}
+
 #home {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 8px 8px 0% 8px;
 }
 
 #home .links {
@@ -272,6 +277,10 @@ a {
 #home h1,
 #home .links {
     margin: 0%;
+}
+
+#presentation {
+    margin: 0% 8px;
 }
 
 .top {
@@ -362,6 +371,7 @@ button {
 #clients {
     margin-left: var(--margin-left2);
     margin-right: var(--margin-left2);
+    margin: auto 8px;
 }
 
 #our-work h1 {
@@ -767,7 +777,7 @@ a i {
     }
 
     #our-work {
-        margin: auto 0%;
+        /* margin: auto 0%; */
     }
 
     #our-work h1 {
@@ -798,7 +808,7 @@ a i {
     }
 
     #clients {
-        margin: 100px 0%;
+        margin: 100px 8px;
     }
 
     #team {
