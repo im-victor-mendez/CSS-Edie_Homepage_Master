@@ -175,3 +175,263 @@
     font-weight: 500;
     line-height: 21px;
 }
+
+/* Position */
+:root {
+    --margin-left: 150px;
+    --margin-left2: 75px;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .links {
+    padding: 0%;
+}
+
+#home .links a {
+    padding: 0% 1rem 0% 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home h1,
+#home .links {
+    margin: 0%;
+}
+
+.top {
+    margin-left: var(--margin-left);
+    margin-top: 4rem;
+}
+
+.top h1 {
+    width: 543px;
+}
+
+.top p {
+    width: max-content;
+}
+
+.top p,
+.top h1 {
+    margin: 0%;
+}
+
+.bottom,
+#presentation .contact {
+    margin-left: var(--margin-left);
+    width: 366px;
+}
+
+.contact h1 {
+    margin-bottom: 0%;
+}
+
+.contact input {
+    width: 316px;
+}
+
+.contact button {
+    position: relative;
+    left: 250px;
+    bottom: 30px;
+    padding: 0% 1rem 0% 1rem;
+}
+
+.contact input,
+.contact button {
+    border-radius: 12px;
+}
+
+#services {
+    margin: 0% var(--margin-left2) 0% var(--margin-left2);
+}
+
+#services h1 {
+    width: 346px;
+}
+
+#services section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    border-radius: 24px;
+}
+
+#services section .service h1,
+.service p {
+    padding: 0% 10% 0% 10%;
+    width: 80%;
+}
+
+#services section .service i {
+    margin: 10% 0% 0% 10%;
+    width: max-content;
+    padding: 16px;
+    /* background-color: aqua; */
+    border-radius: 16px;
+}
+
+.service button {
+    margin: 0% 0% 0% 10%;
+    border-radius: 12px;
+}
+
+button {
+    border: 0px solid white;
+}
+
+#our-work,
+#clients {
+    margin-left: var(--margin-left2);
+    margin-right: var(--margin-left2);
+}
+
+#our-work h1 {
+    width: 450px;
+}
+
+#our-work section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#our-work section .work {
+    width: 49%;
+    margin-bottom: 100px;
+}
+
+.left {
+    position: relative;
+    top: 130px;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.work p,
+.work h1 {
+    margin: 0%;
+}
+
+#our-work a {
+    float: right;
+    position: relative;
+}
+
+#clients {
+    margin-top: 240px;
+}
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#team div {
+    width: 34%;
+}
+
+#team div h2,
+#team div h1,
+#team div p {
+    margin: 0%;
+}
+
+#team #team-imgs {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#team #team-imgs .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+
+#team-imgs img {
+    border-radius: 24px;
+}
+
+#team-img-1 {
+    width: 50%;
+    height: 50%;
+}
+
+#team-img-2 {
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+#team-img-3 {
+    width: 100%;
+}
+
+#msg {
+    margin-top: 195px;
+}
+
+#msg h1 {
+    width: 80%;
+}
+
+#msg div {
+    display: flex;
+    align-items: center;
+}
+
+#msg div img {
+    width: 10%;
+    border-radius: 12px;
+}
+
+#msg div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+}
+
+#msg div div h1,
+#msg div div h2 {
+    margin: 0%;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    margin-left: var(--margin-left2);
+    /* margin-right: var(--margin-left2); */
+}
+
+#contact .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
+
+#contact div h1 {
+    margin: 0%;
+}
+
+#contact .contact button {
+    left: -75px;
+    bottom: 0px;
+}
