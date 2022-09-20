@@ -176,6 +176,75 @@
     line-height: 21px;
 }
 
+/* Color */
+:root {
+    --blue: #2D9CDB;
+    --gray: #E0E0E0;
+    --green: #27AE60;
+    --red: #EB5757;
+    --dark: #100E1D;
+}
+
+#hamburger,
+#nav-ul a {
+    color: black;
+}
+
+.top p,
+#our-work a {
+    color: var(--blue);
+}
+
+button {
+    background-color: var(--blue);
+    color: white;
+}
+
+#ui-ux,
+#front-end,
+#back-end {
+    color: white;
+}
+
+#ui-ux {
+    background-color: var(--blue);
+}
+
+#front-end {
+    background-color: var(--green);
+}
+
+#back-end {
+    background-color: var(--red);
+}
+
+.service:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+}
+
+.service:hover button {
+    background-color: var(--blue);
+    color: white;
+}
+
+.service button {
+    background-color: var(--gray);
+    color: black;
+}
+
+#team h2 {
+    color: var(--red);
+}
+
+#contact {
+    background-color: var(--dark);
+}
+
+#contact,
+#contact a {
+    color: white;
+}
+
 /* Position */
 :root {
     --margin-left: 150px;
@@ -277,12 +346,11 @@ a {
     margin: 10% 0% 0% 10%;
     width: max-content;
     padding: 16px;
-    /* background-color: aqua; */
     border-radius: 16px;
 }
 
 .service button {
-    margin: 0% 0% 0% 10%;
+    margin: 0% 0% 10% 10%;
     border-radius: 12px;
 }
 
@@ -420,14 +488,14 @@ a i {
 #contact {
     display: flex;
     justify-content: space-between;
-    margin-left: var(--margin-left2);
-    /* margin-right: var(--margin-left2); */
+    margin-top: 130px;
+    padding: var(--margin-left3) 0% 160px 0%;
 }
 
 #contact .links {
     display: flex;
     flex-direction: column;
-    margin: 0%;
+    margin: 0% 0% 0% var(--margin-left2);
     padding: 0%;
 }
 
@@ -666,13 +734,15 @@ a i {
         margin: 0% var(--margin-left3);
     }
 
+    #contact .links {
+        margin: 0%;
+    }
+
     .contact input {
         width: 100%;
     }
 
     .contact button {
-        /* left: 255px;
-        bottom: 27px; */
         left: 0px;
         float: right;
         bottom: 27px;
