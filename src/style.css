@@ -435,3 +435,23 @@ button {
     left: -75px;
     bottom: 0px;
 }
+
+.hamburger {
+    background-color: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links.active {
+        display: block;
+    }
+}

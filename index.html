@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
+  <script src="index.js"></script>
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -14,13 +15,30 @@
 <body>
   <section id="home">
     <h1 id="edie">Edie</h1>
-    <ul class="links">
+    <button class="hamburger material-symbols-outlined" id="hamburger" type="button">
+      Menu
+    </button>
+
+    <ul class="links" id="nav-ul">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#our-work">Our Works</a>
       <a href="#clients">Clients</a>
       <a href="#contact">Contact</a>
     </ul>
+
+    <script>
+      function menu() {
+        const hamburger = document.getElementById('hamburger')
+        const navUl = document.getElementById('nav-ul')
+
+        hamburger.addEventListener('click', function(event) {
+            navUl.classList.toggle('active')
+        })
+      }
+
+      menu()
+    </script>
   </section>
 
   <section id="presentation">
