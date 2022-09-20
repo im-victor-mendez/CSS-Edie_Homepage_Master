@@ -29,7 +29,7 @@
     line-height: 72px;
 }
 
-#presentation .bottom h1 {
+.bottom h1 {
     font-family: Poppins;
     font-size: 48px;
     font-weight: 500;
@@ -306,7 +306,7 @@ button {
     justify-content: space-between;
 }
 
-#our-work section .work {
+.work {
     width: 49%;
     margin-bottom: 100px;
 }
@@ -328,8 +328,12 @@ button {
 
 #our-work a {
     float: right;
-    position: relative;
 }
+
+a i {
+        position: relative;
+        top: 5px;
+    }
 
 #clients {
     margin-top: 240px;
@@ -614,6 +618,10 @@ button {
 
     /* Position */
 
+    :root {
+        --margin-left3: 40px;
+    }
+
     .links {
         display: none;
     }
@@ -630,8 +638,139 @@ button {
         top: 53px;
         flex-direction: column;
         align-items: center;
-        height: 90vh;
+        height: 100vh;
         background-color: white;
         justify-content: center;
+        z-index: 99;
+    }
+
+    .top {
+        margin: 4rem var(--margin-left3) 0%;
+    }
+
+    .top h1 {
+        width: 100%;
+    }
+
+    .bottom {
+        margin: 0% var(--margin-left3);
+        width: auto;
+    }
+
+    .bottom h1 {
+        width: 225px;
+    }
+
+    #presentation .contact {
+        width: auto;
+        margin: 0% var(--margin-left3);
+    }
+
+    .contact input {
+        width: 100%;
+    }
+
+    .contact button {
+        /* left: 255px;
+        bottom: 27px; */
+        left: 0px;
+        float: right;
+        bottom: 27px;
+    }
+
+    #services {
+        margin: 0% var(--margin-left3);
+    }
+
+    #services h1 {
+        width: 260px;
+    }
+
+    #services section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    #our-work {
+        margin: auto 0%;
+    }
+
+    #our-work h1 {
+        width: auto;
+        margin: 150px var(--margin-left3) 50px;
+    }
+
+    #our-work section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .left {
+        position: initial;
+    }
+
+    #our-work .work h1 {
+        margin: 0%;
+    }
+
+    #our-work a {
+        float: none;
+    }
+
+    #clients {
+        margin: 100px 0%;
+    }
+
+    #team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team div,
+    #team #team-imgs {
+        width: 100%;
+    }
+
+    #msg {
+        margin-top: 100px;
+    }
+
+    #msg h1 {
+        width: 100%;
+    }
+
+    #msg div img {
+        width: 20%;
+    }
+
+    #contact {
+        margin: 0%;
+        padding: var(--margin-left3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact div {
+        margin-top: 60px;
+    }
+
+    #contact .contact input {
+        width: (100% -4px -4px);
+    }
+
+    #contact .contact button {
+        left: 0px;
+        float: right;
+        bottom: 27px;
     }
 }
