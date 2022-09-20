@@ -436,22 +436,202 @@ button {
     bottom: 0px;
 }
 
-.hamburger {
+#hamburger {
     background-color: transparent;
     display: none;
     cursor: pointer;
 }
 
 @media (max-width: 800px) {
+    /* Typography */
+    #home h1 {
+        font-family: Heebo;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 35px;
+    }
+
+    .top p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .top h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .bottom h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .bottom p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .contact h1 {
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    .contact button {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    #services h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+    
+    .service h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .service p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .service button {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    #our-work {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .work p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+
+    .work h1 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    #our-work a {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    #team div h2 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    #team div h1 {
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 54px;
+    }
+
+    #team div p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    #msg h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    #msg div h1 {
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    #msg div h2 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    #contact .links a {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    #contact div h1 {
+        font-family: Heebo;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 53px;
+    }
+
+    #contact .contact h1 {
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    /* Position */
+
     .links {
         display: none;
     }
 
-    .hamburger {
+    #hamburger {
         display: block;
     }
 
     .links.active {
-        display: block;
+        display: flex;
+        position: absolute;
+        right: 0%;
+        left: 0%;
+        top: 53px;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        background-color: white;
+        justify-content: center;
     }
 }
