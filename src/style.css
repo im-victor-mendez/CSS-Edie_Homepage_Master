@@ -15,7 +15,7 @@
     line-height: 36px;
 }
 
-#presentation .top p {
+.top p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
@@ -50,7 +50,8 @@
     line-height: 21px;
 }
 
-.contact input, .contact button {
+.contact input,
+.contact button {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 500;
@@ -155,7 +156,7 @@
     line-height: 27px;
 }
 
-#contact .links {
+#contact .links a {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 400;
@@ -174,6 +175,79 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
+}
+
+@media (max-width: 800px) {
+    #home h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .top p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .top h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .bottom h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .bottom p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact h1 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .contact input,
+    .contact button {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    #services h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    #our-work h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .work p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #our-work .work h1 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #our-work a {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #msg h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    #contact .contact h1 {
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
 
 /* Color */
@@ -195,14 +269,17 @@
     color: var(--blue);
 }
 
-button {
+button,
+.service:hover button {
     background-color: var(--blue);
     color: white;
 }
 
 #ui-ux,
 #front-end,
-#back-end {
+#back-end,
+#contact,
+#contact a {
     color: white;
 }
 
@@ -222,11 +299,6 @@ button {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
 
-.service:hover button {
-    background-color: var(--blue);
-    color: white;
-}
-
 .service button {
     background-color: var(--gray);
     color: black;
@@ -240,18 +312,25 @@ button {
     background-color: var(--dark);
 }
 
-#contact,
-#contact a {
-    color: white;
-}
-
 /* Position */
 :root {
     --margin-left: 150px;
     --margin-left2: 75px;
 }
 
-body {
+body,
+#home h1,
+.links,
+.top p,
+.top h1,
+.work p,
+.work h1,
+#team div h2,
+#team div h1,
+#team div p,
+#msg div div h1,
+#msg div div h2,
+#contact div h1 {
     margin: 0%;
 }
 
@@ -262,21 +341,16 @@ body {
     margin: 8px 8px 0% 8px;
 }
 
-#home .links {
+.links {
     padding: 0%;
 }
 
-#home .links a {
-    padding: 0% 1rem 0% 1rem;
+.links a {
+    padding: 0% 1rem;
 }
 
 a {
     text-decoration: none;
-}
-
-#home h1,
-#home .links {
-    margin: 0%;
 }
 
 #presentation {
@@ -294,11 +368,6 @@ a {
 
 .top p {
     width: max-content;
-}
-
-.top p,
-.top h1 {
-    margin: 0%;
 }
 
 .bottom,
@@ -319,7 +388,7 @@ a {
     position: relative;
     left: 250px;
     bottom: 30px;
-    padding: 0% 1rem 0% 1rem;
+    padding: 0% 1rem;
 }
 
 .contact input,
@@ -347,7 +416,7 @@ a {
 
 #services section .service h1,
 .service p {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 10%;
     width: 80%;
 }
 
@@ -369,8 +438,6 @@ button {
 
 #our-work,
 #clients {
-    margin-left: var(--margin-left2);
-    margin-right: var(--margin-left2);
     margin: auto 8px;
 }
 
@@ -399,19 +466,14 @@ button {
     border-radius: 12px;
 }
 
-.work p,
-.work h1 {
-    margin: 0%;
-}
-
 #our-work a {
     float: right;
 }
 
 a i {
-        position: relative;
-        top: 5px;
-    }
+    position: relative;
+    top: 5px;
+}
 
 #clients {
     margin-top: 240px;
@@ -425,12 +487,6 @@ a i {
 
 #team div {
     width: 34%;
-}
-
-#team div h2,
-#team div h1,
-#team div p {
-    margin: 0%;
 }
 
 #team #team-imgs {
@@ -490,11 +546,6 @@ a i {
     margin-left: 2rem;
 }
 
-#msg div div h1,
-#msg div div h2 {
-    margin: 0%;
-}
-
 #contact {
     display: flex;
     justify-content: space-between;
@@ -509,10 +560,6 @@ a i {
     padding: 0%;
 }
 
-#contact div h1 {
-    margin: 0%;
-}
-
 #contact .contact button {
     left: -75px;
     bottom: 0px;
@@ -525,177 +572,7 @@ a i {
 }
 
 @media (max-width: 800px) {
-    /* Typography */
-    #home h1 {
-        font-family: Heebo;
-        font-size: 24px;
-        font-weight: 800;
-        line-height: 35px;
-    }
-
-    .top p {
-        font-family: Poppins;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 18px;
-    }
-
-    .top h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-
-    .bottom h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-
-    .bottom p {
-        font-family: Poppins;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 18px;
-    }
-
-    .contact h1 {
-        font-family: Poppins;
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 15px;
-    }
-
-    .contact button {
-        font-family: Poppins;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
-    }
-
-    #services h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-    
-    .service h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-    }
-
-    .service p {
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-    }
-
-    .service button {
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-    }
-
-    #our-work {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-
-    .work p {
-        font-family: Poppins;
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 18px;
-    }
-
-    .work h1 {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-    }
-
-    #our-work a {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-    }
-
-    #team div h2 {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-    }
-
-    #team div h1 {
-        font-family: Poppins;
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 54px;
-    }
-
-    #team div p {
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-    }
-
-    #msg h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-
-    #msg div h1 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-    }
-
-    #msg div h2 {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-    }
-
-    #contact .links a {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 36px;
-    }
-
-    #contact div h1 {
-        font-family: Heebo;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 53px;
-    }
-
-    #contact .contact h1 {
-        font-family: Poppins;
-        font-size: 10px;
-        font-weight: 500;
-        line-height: 15px;
-    }
-
     /* Position */
-
     :root {
         --margin-left3: 40px;
     }
@@ -730,7 +607,8 @@ a i {
         width: 100%;
     }
 
-    .bottom {
+    .bottom,
+    #presentation .contact {
         margin: 0% var(--margin-left3);
         width: auto;
     }
@@ -739,16 +617,13 @@ a i {
         width: 225px;
     }
 
-    #presentation .contact {
-        width: auto;
-        margin: 0% var(--margin-left3);
-    }
-
-    #contact .links {
+    #contact .links,
+    #our-work .work h1 {
         margin: 0%;
     }
 
-    .contact input {
+    .contact input,
+    .service {
         width: 100%;
     }
 
@@ -772,14 +647,6 @@ a i {
         align-items: center;
     }
 
-    .service {
-        width: 100%;
-    }
-
-    #our-work {
-        /* margin: auto 0%; */
-    }
-
     #our-work h1 {
         width: auto;
         margin: 150px var(--margin-left3) 50px;
@@ -799,10 +666,6 @@ a i {
         position: initial;
     }
 
-    #our-work .work h1 {
-        margin: 0%;
-    }
-
     #our-work a {
         float: none;
     }
@@ -817,16 +680,13 @@ a i {
     }
 
     #team div,
-    #team #team-imgs {
+    #team #team-imgs,
+    #msg h1 {
         width: 100%;
     }
 
     #msg {
         margin-top: 100px;
-    }
-
-    #msg h1 {
-        width: 100%;
     }
 
     #msg div img {
@@ -840,17 +700,17 @@ a i {
         flex-direction: column;
     }
 
-    #contact div {
-        margin-top: 60px;
+    #contact .links a {
+        padding: 0%;
     }
 
-    #contact .contact input {
-        width: (100% -4px -4px);
+    #contact div {
+        margin-top: 60px;
     }
 
     #contact .contact button {
         left: 0px;
         float: right;
-        bottom: 27px;
+        bottom: 24px;
     }
 }
